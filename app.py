@@ -27,4 +27,3 @@ if st.sidebar.button('Add Climb'):
 # Display the logbook
 st.header('Climbing Logbook')
 st.table(logbook_data.sort_values(by='Date', ascending=False).reset_index(drop=True))
-
