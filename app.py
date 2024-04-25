@@ -8,7 +8,7 @@ logbook_data = pd.DataFrame(columns=['Date', 'Route', 'Grade', 'Notes'])
 # Function to add a climb to the logbook
 def add_climb(date, route, grade, notes):
     global logbook_data
-    logbook_data = logbook_data.append({'Date': date, 'Route': route, 'Grade': grade, 'Notes': notes}, ignore_index=True)
+    logbook_data = logbook_data._append({'Date': date, 'Route': route, 'Grade': grade, 'Notes': notes}, ignore_index=True)
 
 # Streamlit UI
 st.title('Climbing Logbook App')
