@@ -23,7 +23,7 @@ climb_notes = st.sidebar.text_area('Notes', '')
 if st.sidebar.button('Add Climb'):
     add_climb(climb_date, climb_route, climb_grade, climb_notes)
     st.sidebar.success('Climb added to logbook!')
-
+st.sidebar.page_link("https://climbingaway.fr/en/rock-climbing-areas/world-map-of-rock-climbing-areas", label="Climb Finder", icon="🧗")
 # Display the logbook
 st.header('Climbing Logbook')
 st.table(logbook_data.sort_values(by='Date', ascending=False).reset_index(drop=True))
